@@ -1,0 +1,5 @@
+/** This formula evaluates Annual Revenue, Billing Country, and Type, and assigns a value
+of “Hot,” “Warm,” or “Cold.” **/
+
+IF (AND (AnnualRevenue > 10000,
+CONTAINS (CASE(BillingCountry, "United States", "US", "USA"), "US")),
