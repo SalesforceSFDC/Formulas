@@ -7,4 +7,3 @@ https://help.salesforce.com/articleView?id=customize_formulas.htm&type=0&languag
 https://help.salesforce.com/articleView?id=workflow_examples.htm&type=0
 
 https://developer.salesforce.com/forums/?id=906F0000000BUSaIAO
-
