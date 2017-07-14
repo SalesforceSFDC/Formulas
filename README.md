@@ -104,3 +104,9 @@ OR(ISPICKVAL(Priority, "High") || ISPICKVAL(Type, "Problem"))
 * Qualitative Scoring - how good are the leads based on the qualification questions.
 
 #### BANT - 'Budget, Authority, Need & Timeframe' Score
+
+### Field: Completeness Scorre
+```sql Completeness
+CASE(Title, " ", 0.5)+
+CASE
+```
