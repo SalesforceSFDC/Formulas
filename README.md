@@ -138,5 +138,23 @@ CASE(Text(Purchasing_Timeframe__c), "< 3 months", 5,
 Compile size = 507
 
 
-                                 
+#### Star Rating Formula Field                                 
+```sql
+IF (Lead_Score__c <= 5,
+IMAGE("/img/samples/stars_100.gif", "1 Star"),
+IF(Lead_Score__c <= 10,
+IMAGE("/img/samples/stars_200.gif", "2 Stars"),
+IF(Lead_Score__c <= 15,
+IMAGE(""/img/samples/stars_300.gif", "3 Stars")))
 ```
+#### Quality Rating Formula Field
+```sql
+IF(Qualitative_Lead_Score__c <= 10,
+IMAGE("/resource/Red Check", "Red Check Mark", 100,  100),
+IF(Qualitative_Lead_Score__c <= 15,
+IMAGE("/resource/Orange Check", "Orange Check Mark", 100,  100),
+IF(Qualitative_Lead_Score__c <= 20,
+IMAGE("/resource/Green Check", "Green Check Mark", 100,  100), " ")))
+
+```
+
