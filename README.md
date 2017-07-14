@@ -8,3 +8,10 @@ https://help.salesforce.com/articleView?id=workflow_examples.htm&type=0
 
 https://developer.salesforce.com/forums/?id=906F0000000BUSaIAO
 
+## IF Statement
+
+If (Field Name) = "Value", then do this, else do that
+- comma is used in place of "then" and "else",
+Right parenthesis is used in place of End if
+
+If 
