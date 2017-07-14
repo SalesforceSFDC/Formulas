@@ -105,8 +105,10 @@ OR(ISPICKVAL(Priority, "High") || ISPICKVAL(Type, "Problem"))
 
 #### BANT - 'Budget, Authority, Need & Timeframe' Score
 
-### Field: Completeness Scorre
-```sql Completeness
-CASE(Title, " ", 0.5)+
-CASE
+#### Field: Completeness Scorre
+```sql 
+CASE(Title, " ", 0, 5)+
+CASE(Street, " ", 0, 5)+
+CASE(Email, " ", 0, 5)+
+CASE(Phone,
 ```
