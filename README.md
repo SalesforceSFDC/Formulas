@@ -103,4 +103,4 @@ OR(ISPICKVAL(Priority, "High") || ISPICKVAL(Type, "Problem"))
 * Completeness Score - shows the lead rating based on the info in the lead.
 * Qualitative Scoring - how good are the leads based on the qualification questions.
 
-###### BANT - 'Budget, Authority, Need & Timeframe' Score
+##### BANT - 'Budget, Authority, Need & Timeframe' Score
