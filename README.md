@@ -110,5 +110,33 @@ OR(ISPICKVAL(Priority, "High") || ISPICKVAL(Type, "Problem"))
 CASE(Title, " ", 0, 5)+
 CASE(Street, " ", 0, 5)+
 CASE(Email, " ", 0, 5)+
-CASE(Phone,
+CASE(Phone, " ", 0, 5)+
+CASE(Website, " ", 0, 5)
+```
+Compile size = 395
+
+#### Qualitative Lead Scoring
+
+If Authority = "Yes" score = 5,
+Need = "Yes" score = 5,
+Budget = "Yes" score = 5
+Purchasing Timeframe -
+  < 3 months, score = 5
+  3 - 6 months, score = 4
+  6 - 12 months, score = 3 
+  > 12 months, score = 2
+  
+```sql
+CASE(Text(Authority__c), "Yes", 5, 0)+
+CASE(Text(Is_there_a_Need__c), "Yes", 5, 0)+
+CASE(Text(Is_there_a_Budget__c), "Yes", 5, 0)+
+CASE(Text(Purchasing_Timeframe__c), "< 3 months", 5,
+                                    "3 - 6 months", 4,
+                                    "6 - 12 months", 3,
+                                    "> 12 months", 2, 0)
+```
+Compile size = 507
+
+
+                                 
 ```
