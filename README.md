@@ -28,3 +28,12 @@ If(State = "WA", "West",
 If(State = "NY", "East",
 If(State = "IL", "Mid-West", " "))))
 ```
+
+## CASE Statement
+```
+CASE(Fieldname, Value1, Result1,
+                Value2, Result2,
+                Else_Result)
+```
+
+
