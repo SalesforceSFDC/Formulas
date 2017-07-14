@@ -52,4 +52,13 @@ IF State = "CA" AND Country = "USA" then Region = "USA" END IF
 ```
 
 ```
-AND
+AND(value 1, value 2, value 3,...)
+```
+=
+```
+(value 1 && value 2 && value 3 && ...)
+```
+
+
+
+
