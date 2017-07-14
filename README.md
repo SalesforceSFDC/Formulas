@@ -36,4 +36,20 @@ CASE(Fieldname, Value1, Result1,
                 Else_Result)
 ```
 
+```SQL
+CASE(State, 
+    "CA", "West",
+    "WA", "West",
+    "NY", "East",
+    "IL", "Mid-West",
+    " ")
+```
 
+## AND Statement (Compare Values)
+
+```sql
+IF State = "CA" AND Country = "USA" then Region = "USA" END IF
+```
+
+```
+AND
