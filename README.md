@@ -14,14 +14,14 @@ If (Field Name) = "Value", then do this, else do that
 - comma is used in place of "then" and "else",
 Right parenthesis is used in place of End if
 
-####SQL IF Statement
+#### SQL IF Statement
 ```SQL
 If State = "CA" then Region = "West" Else
 If State = "WA" then Region = "West Else
 ```
 
 
-####Salesforce Formula IF Statement
+#### Salesforce Formula IF Statement
 ```SQL
 If(State = "CA", "West",
 If(State = "WA", "West",
