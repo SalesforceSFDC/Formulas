@@ -19,9 +19,11 @@ Right parenthesis is used in place of End if
 If State = "CA" then Region = "West" Else
 If State = "WA" then Region = "West Else
 ```
-
-
+#### SQL IF Statement
+##### SQL IF Statement
 ###### Salesforce Formula IF Statement
+####### SQL IF Statement
+
 ```SQL
 If(State = "CA", "West",
 If(State = "WA", "West",
