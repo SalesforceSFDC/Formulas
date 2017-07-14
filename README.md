@@ -61,5 +61,22 @@ AND(value 1, value 2, value 3,...)
 
 ```sql
 IF(
+AND(State="CA", Country="USA"), "West USA", " "), " ")
+```
+```sql
+IF((State = "CA" && Country="USA"), "West-USA", " ")
+```
+
+## OR Statement
+If Priority = "High" OR Type = "Problem" then
+Notification Flag = "True" End if
+```
+OR (Value 1, value 2, value, ...)
+```
+=
+```sql
+(value 1 || value 2 || value 3)
+```
+
 
 
