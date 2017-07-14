@@ -82,5 +82,8 @@ IF(
 OR(Priority = "High", Type = "Problem"), "True", "False"
 )
 ```
+```sql
+IF(
+(Priority = "High" || Type = "Problem"), "True", "False"
+)
 ```
-IF
