@@ -21,7 +21,7 @@ If State = "WA" then Region = "West Else
 ```
 
 
-#### Salesforce Formula IF Statement
+##### Salesforce Formula IF Statement
 ```SQL
 If(State = "CA", "West",
 If(State = "WA", "West",
