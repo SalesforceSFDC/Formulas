@@ -87,3 +87,16 @@ IF(
 (Priority = "High" || Type = "Problem"), "True", "False"
 )
 ```
+
+## AND & OR Combined
+IF (Priority = "High" OR Type = "Problem") AND Status = "Open" then Notification Flag = "True" End If
+
+```sql
+IF(
+AND(
+OR(ISPICKVAL(Priority, "High") || ISPICKVAL(Type, "Problem"))
+
+&& ISPICKVAL(Status, "Open"), "True", "False")
+```
+## Business Case: Completeness Score and Qualitative Lead Scoring
+
