@@ -19,3 +19,9 @@ If State = "CA" then Region = "West" Else
 If State = "WA" then Region = "West Else
 ```
 
+```SQL
+If(State="CA", "West",
+If(State="WA", "West",
+If(State="NY", "East",
+If(State="IL", "Mid-West", " "))))
+```
