@@ -77,6 +77,10 @@ OR (Value 1, value 2, value, ...)
 ```sql
 (value 1 || value 2 || value 3)
 ```
-
-
-
+```sql
+IF(
+OR(Priority = "High", Type = "Problem"), "True", "False"
+)
+```
+```
+IF
