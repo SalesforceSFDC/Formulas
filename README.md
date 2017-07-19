@@ -1,5 +1,6 @@
 # Formulas
 
+* [Tips for Reducing Formula Size](https://resources.docs.salesforce.com/208/latest/en-us/sfdc/pdf/salesforce_formula_size_tipsheet.pdf)
 https://help.salesforce.com/articleView?id=tips_on_building_formulas.htm&siteLang=en_US&type=0
 
 https://help.salesforce.com/articleView?id=customize_formulas.htm&type=0&language=en_US&release=208.13
